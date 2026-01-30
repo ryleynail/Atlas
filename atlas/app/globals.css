@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Global styles for Atlas.
+  We set the default font and backgrounds so the entire site
+  conforms to the dark navy and gold theme.  Additional styles can be
+  extended in components as needed.
+*/
+body {
+  @apply bg-background text-white;
+}
+
+/* Map container must fill its parent */
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.marker {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
